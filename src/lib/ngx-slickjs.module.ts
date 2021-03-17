@@ -9,7 +9,7 @@ import { SLICK_LINKS, linkOptionsFactory } from "./tokens/links.token";
   exports: [SlickContainerDirective, SlickItemDirective],
 })
 export class NgxSlickJsModule {
-  static forRoot({ links = {} } = {} as Options.Root): ModuleWithProviders {
+  static forRoot({ links = {} } = {} as Options.Root): ModuleWithProviders<any> {
     return {
       ngModule: NgxSlickJsModule,
       providers: [
